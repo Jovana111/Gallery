@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kreiranje responsive galerije</title>
+    <style>
+        #body {
+            font-family: sans-serif;
+        }
+
+        #main {
+            max-width: 960px;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+        }
+
+        #header {
+            flex-basis: 100%;
+           
+        }
+
+        .plocica {
+            flex-basis: 16%;
+            margin: 0px 18px 18px 0px;
+            max-width: 155px;
+            border-radius: 8px;
+            background-color: rgba(156, 217, 245, 0.925);
+        }
+
+        .plocica-background {
+            height: 100px;
+            background-image: url(placeholder-image.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .plocica-text {
+            font-size: 15px;
+            text-align: center;
+            background-color: whitesmoke;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .plocica {
+                flex-basis: 33.33%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .plocica {
+                flex-basis: 50%;
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            .plocica {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <header id="header">
+            <h2>Gallery Heading</h2>
+        </header>
+        <div class="row">
+            <div class="plocica">
+                <div class="plocica-background"></div>
+                <div class="plocica-text">Image Title</div>
+            </div>
+            <div class="plocica">
+                <div class="plocica-background"></div>
+                <div class="plocica-text">Image Title</div>
+            </div>
+            <div class="plocica">
+                <div class="plocica-background"></div>
+                <div class="plocica-text">Image Title</div>
+            </div>
+            <div class="plocica">
+                <div class="plocica-background"></div>
+                <div class="plocica-text">Image Title</div>
+            </div>
+            <div class="plocica">
+                <div class="plocica-background"></div>
+                <div class="plocica-text">Image Title</div>
+            </div>
+            <div class="plocica">
+                <div class="plocica-background"></div>
+                <div class="plocica-text">Image Title</div>
+            </div>
+            <div class="plocica">
+                <div class="plocica-background"></div>
+                <div class="plocica-text">Image Title</div>
+            </div>
+            <div class="plocica">
+                <div class="plocica-background"></div>
+                <div class="plocica-text">Image Title</div>
+            </div>
+            <div class="plocica">
+                <div class="plocica-background"></div>
+                <div class="plocica-text">Image Title</div>
+            </div>
+            <div class="plocica">
+                <div class="plocica-background"></div>
+                <div class="plocica-text">Image Title</div>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati beatae eius asperiores placeat,
+                    adipisci rem, tempore odit eos iste accusamus voluptas deleniti neque fugit? Asperiores tempore
+                    deleniti
+                    accusamus dolorem numquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
+                    beatae
+                    eius asperiores placeat, adipisci rem, tempore odit eos iste accusamus voluptas deleniti neque
+                    fugit?
+                    Asperiores tempore deleniti accusamus dolorem numquam. Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Obcaecati beatae eius asperiores placeat, adipisci rem, tempore odit eos iste
+                    accusamus voluptas deleniti neque fugit? Asperiores tempore deleniti accusamus dolorem numquam.</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
